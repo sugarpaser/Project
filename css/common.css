@@ -8,13 +8,13 @@ a {text-decoration:none;}
 .board_wrap {
     width:1200px;
     height: 600px;
-    margin: 0 auto;
     box-shadow: 3px 3px 50px #e6e6e6;
     border-radius: 20px;
     position:absolute;
+    left: 50%;
     top : 50%;
-    transform:translateY(-50%);
-    -webkit-transform:transla
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
 }
 
 .board_header {
