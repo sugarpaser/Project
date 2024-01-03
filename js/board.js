@@ -132,5 +132,20 @@ function block_print(front_block){
 
 function before(){
     block_print(current_block-block_num)
-    con전
+    console.log("이전");
+}
+
+function next(){
+    block_print(current_block+block_num)
+    console.log("다음");
+}
+
+// 화면 로드 시 실행되는 이이벤트
+window.onload = function(){
+
+    // 게시글 데이터 출력하기
+    post_data_princt(1)
+
+    //블럭 출력하기
+    block_print(1)
 }
