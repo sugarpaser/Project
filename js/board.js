@@ -68,7 +68,7 @@ function post_data_print(block){
 
         let classname = ["w70", "w500", "w120", "w100", "w100", "w100"]
 
-        let post_data = [data[i].notice_num, data[i].title, data[i].writer, data[i].date_created, data[i].Lookkup_num, data[i].like];
+        // let post_data = [data[i].notice_num, data[i].title, data[i].writer, data[i].date_created, data[i].Lookkup_num, data[i].like];
 
         // 게시글 생성
         for(let j=0; j<classname.length; j++){
@@ -86,7 +86,7 @@ function post_data_print(block){
 function getJSON(){
     $.ajax({
         type:"get",
-        url: "../data/data.json",
+        url: "./data/data.json",
         dataType:"json",
         success:function(data){
             console.log("통신성공");
