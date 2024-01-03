@@ -59,3 +59,17 @@ li {
     /* 구성 요소 세로로 배치 */
     flex-direction : column;
 }
+
+.pagination {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+/* 전체 중앙 정렬 */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
