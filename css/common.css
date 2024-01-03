@@ -41,7 +41,7 @@ a {text-decoration:none;}
     padding: 10px 15px 10px 15px;
     margin-left: 10px;
     border-radius :10px;
-    background-color: tomato;
+    background-color: #e2552c;
     color:#fff;
 }
 
@@ -103,7 +103,7 @@ a {text-decoration:none;}
 
 .btn a {
     padding: 10px;
-    background-color: tomato;
+    background-color: #e2552c;
     color: #fff;
     border-radius:10px;
 }
