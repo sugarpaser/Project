@@ -85,7 +85,7 @@ function post_data_print(block){
 
     $.ajax({
         type:"get",
-        url: "./data/data.json",
+        url: "../data/data.json",
         dataType:"json",
         success:function(data){
             console.log("통신성공");
