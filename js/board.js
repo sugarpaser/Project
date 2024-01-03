@@ -83,6 +83,31 @@ function post_data_print(block){
     }
 }
 
+function getJSON(){
+    $.ajax({
+        type:"get",
+        url: "data.json",
+        dataType:"json",
+        success:function(data){
+            console.log("통신성공");
+            console.log(data);
+            str = '<ul>'
+            $.each(data, function(i){
+                str+= '<li>' + data[i].notice_num + '</li>'
+                      '<li>' + data[i].title + '</li>'
+                      '<li>' + data[i].writer + '</li>'
+                      '<li>' + data[i].data_created + '</li>'
+                      '<li>' + data[i].Lokkup_num + '</li>'
+                      '<li>' + data[i].like + '</li>';
+                str += '</ul>'
+            });
+         $('.board_row').append(str);
+        },
+        error:function(){
+            console.log("통신에러");
+        }
+    })
+}
 // 블럭 출력하기
 // 매개변수 : 가장 앞에 오는 블럭
 function block_print(front_block){
