@@ -69,5 +69,53 @@ function post_data_print(block){
         let classname = ["w70", "w500", "w120", "w100", "w100", "w100"]
 
         let post_data = [data[i].notice_num, data[i].title, data[i].writer, data[i].date_created, data[i].Lookkup_num, data[i].like];
+
+        // 게시글 생성
+        for(let j=0; j<classname.length; j++){
+            let li = document.createElement("li");
+            li.className = classname[j];
+            li.textContent = post_data[j];
+            post.appendChild(li);
+        }
+
+        // 게시글 추가
+        notice_board.appendChild(post);
     }
+}
+
+// 블럭 출력하기
+// 매개변수 : 가장 앞에 오는 블럭
+function block_print(front_block){
+    /*
+    1. 이전, 다음 블럭 속성 처리
+    2. 기존 블럭 모두 삭제 
+    3. 범위 안의 블럭 생성 및 추가
+    */
+   current_block = front_block;
+
+   // 이전으로 갈 블럭이 없으면
+   if(front_block <= 1){
+    document.querySelector(".before_move").style.visivility = "hidden";
+   }
+   else{
+    document.querySelector(".before_mmove").style.visibility = "visible";
+   }
+
+   // 다음으로 갈 블럭이 없으면
+   if(front_block+block_num >= total_block){
+    document.querySelector(".next_move").style.visibility = "hidden";
+   }
+   else{
+    document.querySelector(".next_move").style.visivility = "visible";
+   }
+
+   // 블럭을 추가할 공간
+   let block_box = document.querySelector(".block");
+   // 기존 블럭 모두 삭제
+   block_box.replaceChildren();
+
+   // front_block부터 total_block 또는 block_num까지 생성 및 추가
+   for(let i=front_block; i<=total_block && i<front_block+block_num; i++){
+    console.lo
+   }
 }
