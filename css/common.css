@@ -4,3 +4,106 @@
 * {margin:0; padding:0;}
 li {list-style:none;}
 a {text-decoration:none;}
+
+.board_wrap {
+    width:1200px;
+    height: 1200px;
+    margin: 0 auto;
+    box-shadow: 3px 3px 50px #e6e6e6;
+    border-radius: 20px;
+    position:relative;
+}
+
+.board_header {
+    padding: 20px;
+    text-align: center;
+}
+
+.board_header h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.board_body {
+    padding: 20px;
+    text-align: center;
+}
+
+.board_body input[type="search"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border : 1px solid #999;
+    border-radius: 10px;
+    width:300px;
+}
+
+.board_body a.search {
+    padding: 10px 15px 10px 15px;
+    margin-left: 10px;
+    border-radius :10px;
+    background-color: tomato;
+    color:#fff;
+}
+
+.board_body div {
+    margin-top :10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.board_body div div {
+    display: inline-block;
+    padding : 15px 10px 15px 10px;
+    margin : 0;
+    border: none;
+}
+
+.board_body .check , .delete {
+    width: 5%;
+}
+
+.board_body .title {
+    width: 70%;
+    text-align : left;
+}
+
+.board_body .delete button {
+    background-color: #fff;
+    border: none;
+}
+
+.number {
+    padding: 10px;
+}
+
+.number li {
+    display: inline-block;
+}
+
+.number li a {
+    display: block;
+    width: 40px;
+    line-height:40px;
+    border-radius : 10px;
+    margin: 3px;
+    margin-top : 20px;
+    box-shadow: 0 5px 10px #f1f1f1;
+}
+
+.number li a.active {
+    background-color : rgb(252, 212, 205);
+}
+
+.btn {
+    position:absolute;
+    right:0;
+    bottom:0;
+    padding: 10px;
+    margin: 10px 10px 20px 10px;
+}
+
+.btn a {
+    padding: 10px;
+    background-color: tomato;
+    color: #fff;
+    border-radius:10px;
+}
