@@ -83,10 +83,9 @@ function post_data_print(block){
     }
 }
 
-function getJSON(){
     $.ajax({
         type:"get",
-        url: "./data/data.json",
+        url: "../data/data.json",
         dataType:"json",
         success:function(data){
             console.log("통신성공");
@@ -107,7 +106,7 @@ function getJSON(){
             console.log("통신에러");
         }
     })
-}
+    
 // 블럭 출력하기
 // 매개변수 : 가장 앞에 오는 블럭
 function block_print(front_block){
