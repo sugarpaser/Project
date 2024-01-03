@@ -132,5 +132,5 @@ function block_print(front_block){
 
 function before(){
     block_print(current_block-block_num)
-    console.lo전
+    con전
 }
