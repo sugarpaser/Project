@@ -12,6 +12,9 @@ a {text-decoration:none;}
     box-shadow: 3px 3px 50px #e6e6e6;
     border-radius: 20px;
     position:relative;
+    top : 50%;
+    transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
 }
 
 .board_header {
