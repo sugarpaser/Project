@@ -24,7 +24,6 @@ li {
     border-bottom:solid 1px gray;
     float:left;
     text-align:center;
-    list-style:none;
 }
 
 /* 번호, 제목, 작성자, 작성일, 조회, 좋아요 row의 style 설정 */
