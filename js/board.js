@@ -94,7 +94,7 @@ function block_print(front_block){
    current_block = front_block;
 
    // 이전으로 갈 블럭이 없으면
-   if(front_block <= 1){
+   if(front_block-block_num <= 1){
     document.querySelector(".before_move").style.visivility = "hidden";
    }
    else{
@@ -140,7 +140,7 @@ function next(){
     console.log("다음");
 }
 
-// 화면 로드 시 실행되는 이이벤트
+// 화면 로드 시 실행되는 이벤트
 window.onload = function(){
 
     // 게시글 데이터 출력하기
