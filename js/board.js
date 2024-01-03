@@ -116,6 +116,21 @@ function block_print(front_block){
 
    // front_block부터 total_block 또는 block_num까지 생성 및 추가
    for(let i=front_block; i<=total_block && i<front_block+block_num; i++){
-    console.lo
+    console.log("add element");
+
+    // 버튼을 실행한다.
+    let button = document.createElement("button");
+    button.textContent = i;
+    // 버튼을 클리갛면 게시글의 변경되는 이벤트 추가
+    button,addEventListener("click", function(event){
+        post_data_print(i)
+    });
+    // 블럭에 추추가한다.
+    block_box.appendChild(button);
    }
+}
+
+function before(){
+    block_print(current_block-block_num)
+    console.lo전
 }
