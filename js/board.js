@@ -101,7 +101,7 @@ function getJSON(){
                       '<li>' + data[i].like + '</li>';
                 str += '</ul>'
             });
-         $('.board_row').append(str);
+         $('.board_text').append(str);
         },
         error:function(){
             console.log("통신에러");
