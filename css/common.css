@@ -35,3 +35,27 @@ li {
     border-top : solid 2px #000;
     border-right:solid 1px gray;
 }
+
+/* 게시글 목록 데이터 개별 요소 속성 */
+.data_row >li {
+    height:40px;
+    line-height:40px;
+    font-weight:lighter;
+    border-right:solid 1px gray;
+}
+
+/* 요소들의 너비 설정 */
+.w70 {width:70px;}
+.w100 {width:100px;}
+.w120 {width:120px;}
+.w500 {width:500px;}
+
+/* 게시판 목록 박스 */
+.notice_board {
+    display:flex;
+    justify-content : center;
+    align-content : center;
+    align-items : center;
+    /* 구성 요소 세로로 배치 */
+    flex-direction : column;
+}
